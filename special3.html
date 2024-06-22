@@ -1,0 +1,87 @@
+<?php include "common/inc/head.html";?>
+<div id="wrap">
+    <?php include "common/inc/header.html";?>
+    <div id="container">
+        <section id="content" class="sub3_1 sub_special">
+            <div class="main_visual visual">
+                <div class="visual_box">
+                    <div class="visual_control">
+                        <div class="swiper-arw swiper-button-prev"><img src="<?= $common_prev_png ?>" alt="prev"></div>
+                        <div class="swiper-arw swiper-button-next"><img src="<?= $common_next_png ?>" alt="next"></div>
+                    </div>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <?php if (count($trip_special_images_3) > 0) { foreach ($trip_special_images_3 as $special_image) { ?>
+                            <div class="swiper-slide" style="background:url(<?= $special_image->content_url ?>) center; background-size:cover;"></div>
+                            <?php }} ?>				
+                        </div>					
+                    </div>						
+                </div>
+            </div>
+            <?php include "common/inc/special_lnb.html";?>
+            <div class="sub_cont inner">
+                <div class="title_box">
+                    <span>SPECIAL</span>
+                    <h3>개별 풀빌라</h3>
+                    <p>Private Pool</p>
+                </div>
+                <div class="special_top">
+                    <div class="img" style="background:url(<?= $special_3_1_jpg ?>) center; background-size:cover"></div>
+                    <div class="txt">
+                        <div class="sp_detail">
+                            프라이빗하게 즐기는 물놀이
+                        </div>
+                    </div>
+                </div>
+                <div class="special_info">
+                    <dl>
+                        <dt>기본정보</dt>
+                        <dd>
+                            <span>미온수 비용</span> <br>
+                             A101호, A201호, A301호 : 100,000원 (현장결제)<br>                             
+                            * 미온수 이용 시 입실일 기준 3일 전까지 신청 필수<br>
+                            * 미온수 미신청 시 냉수로 무료 이용 가능<br>
+                            <span>이용시간</span> : 입실 후 ~ 22시까지<br>
+                            <span>이용복장</span> : 래시가드, 수영복, 기능성 티 (면티 절대 불가)<br>
+                            <span>크기</span> : <br>
+                            <span>[A101호]</span>  230cm * 450cm * 80cm<br>
+                            <span>[A201/301호]</span>  250c * 475cmm * 80cm<br>
+                          
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>유의사항</dt>
+                        <dd>
+                            ※ 반드시 샤워 후에 이용해주세요.<br>
+                            ※ 입욕제 사용 및 다이빙 절대 금지<br>
+                            ※ 썬텐크림이나 오일은 몸에 바른 채로 입수 불가<br>
+                            ※ 음주 후 입수, 수영장 내에서 뛰거나 고성방가는 금지합니다.<br>
+                            ※ 온수 신청 시 물온도는 '29도~32도' (온수 가동 20시까지)<br>
+                            ※ 고객의 부주의로 일어난 안전사고에 대해서는 책임지지 않습니다.
+
+                        </dd>
+                    </dl>
+                </div>
+                <ul class="special_btm">
+                    <li style="background:url(<?= $special_3_2_jpg ?>) center; background-size:cover"></li>
+                    <li style="background:url(<?= $special_3_4_jpg ?>) center; background-size:cover"></li>
+                </ul>
+            </div>
+        </section>
+    </div> <!-- container -->
+    <?php include "common/inc/footer.html";?>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

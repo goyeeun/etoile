@@ -1,0 +1,67 @@
+<?php include "common/inc/head.html";?>
+<div id="wrap">
+    <?php include "common/inc/header.html";?>
+    <div id="container">
+        <section id="content" class="sub3_1 sub_special">
+            <div class="main_visual visual">
+                <div class="visual_box">
+                    <div class="visual_control">
+                        <div class="swiper-arw swiper-button-prev"><img src="<?= $common_prev_png ?>" alt="prev"></div>
+                        <div class="swiper-arw swiper-button-next"><img src="<?= $common_next_png ?>" alt="next"></div>
+                    </div>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <?php if (count($trip_special_images_5) > 0) { foreach ($trip_special_images_5 as $special_image) { ?>
+                            <div class="swiper-slide" style="background:url(<?= $special_image->content_url ?>) center; background-size:cover;"></div>
+                            <?php }} ?>
+                        </div>					
+                    </div>						
+                </div>
+            </div>
+            <?php include "common/inc/special_lnb.html";?>
+            <div class="sub_cont inner">
+                <div class="title_box">
+                    <span>SPECIAL</span>
+                    <h3>사륜바이크</h3>
+                    <p>ATV</p>
+                </div>
+                <div class="special_top">
+                    <div class="img" style="background:url(<?= $special_5_1_jpg ?>) center; background-size:cover"></div>
+                    <div class="txt">
+                        <div class="sp_detail">
+                            신나는 액티비티! 사륜바이크
+                        </div>
+                    </div>
+                </div>
+                <div class="special_info">
+                    <dl>
+                        <dt>기본정보</dt>
+                        <dd>
+                            <span>이용요금</span> : 무료<br>
+                            <span>이용시간</span> : 입실 후 ~ 18시<br>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>유의사항</dt>
+                        <dd>
+                            ※ 안전모 필수 착용
+                        </dd>
+                    </dl>
+                </div>
+                <ul class="special_btm">
+                    <li style="background:url(<?= $special_5_2_jpg ?>) center; background-size:cover"></li>
+                    <li style="background:url(<?= $special_5_3_jpg ?>) center; background-size:cover"></li>
+                </ul>
+            </div>
+        </section>
+    </div> <!-- container -->
+    <?php include "common/inc/footer.html";?>
+</div>
+
+
+
+
+
+
+
+

@@ -1,0 +1,37 @@
+
+		<div id="footer">
+			<div class="foot_inner inner">
+				<div class="foot_logo"><img src="<?= $common_w_logo_png ?>" alt="<?= $pension_ko ?>"></div>
+				<div class="foot_txt">
+					<p class="pension"><?= $mh_item_name ?></p>
+					<p class="address"><?= $mh_loc_road_addr ?></p>
+					<p class="owner">대표자 : <?= $mh_biz_owner ?><?php if ($mh_biz_no != '') { ?> | 사업자 번호 : <?= $mh_biz_no ?><?php } ?></p>
+					<p class="policy"><a href="<?= $mh_privacy ?>" target="_blank">개인정보처리방침</a></p>
+                    <p class="policy">
+                        <?php if ($mh_yanolja_calendar_use === true) { ?>
+                        <a href="<?= $mh_yanolja_calendar_url ?>" target="_blank">야놀자 YBS</a>
+                        <?php } ?>
+                    </p>
+					<p class="copyright"><a href="http://trip11.kr/" target="_blank">COPYRIGHT&copy;(주)트립일레븐. ALL RIGHTS RESERVED.</a></p>
+				</div>
+				<div class="foot_tel">T.1833-9306</div>
+			</div>
+		</div>
+<?= $mh_chtalk ?>
+<div class="ft_btn_reserve for_m on">
+    <a title="실시간예약창" href="<?= $mh_reservation_url ?>" target="_blank"><img src="<?= $common_talk_png ?>" alt="실시간 예약창"></a>
+</div>
+	</div> <!-- wrap -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,74 @@
+<?php include "common/inc/head.html";?>
+<div id="wrap">
+    <?php include "common/inc/header.html";?>
+    <div id="container">
+        <section id="content" class="sub3_1 sub_special">
+            <div class="main_visual visual">
+                <div class="visual_box">
+                    <div class="visual_control">
+                        <div class="swiper-arw swiper-button-prev"><img src="<?= $common_prev_png ?>" alt="prev"></div>
+                        <div class="swiper-arw swiper-button-next"><img src="<?= $common_next_png ?>" alt="next"></div>
+                    </div>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <?php if (count($trip_special_images_4) > 0) { foreach ($trip_special_images_4 as $special_image) { ?>
+                            <div class="swiper-slide" style="background:url(<?= $special_image->content_url ?>) center; background-size:cover;"></div>
+                            <?php }} ?>
+                        </div>					
+                    </div>						
+                </div>
+            </div>
+            <?php include "common/inc/special_lnb.html";?>
+            <div class="sub_cont inner">
+                <div class="title_box">
+                    <span>SPECIAL</span>
+                    <h3>개별 바베큐</h3>
+                    <p>Private BBQ</p>
+                </div>
+                <div class="special_top">
+                    <div class="img" style="background:url(<?= $special_4_1_jpg ?>) center; background-size:cover"></div>
+                    <div class="txt">
+                        <div class="sp_detail">
+                            즐거운 바베큐 파티!
+                        </div>
+                    </div>
+                </div>
+                <div class="special_info">
+                    <dl>
+                        <dt>기본정보</dt>
+                        <dd>
+                            <span>바베큐 타입</span> : 전기그릴<br>
+                            <span>이용요금</span> : <br>
+                            <span>[A101호]</span> 2인 기준 20,000원 (1인 추가 5,000원)<br>
+                            <span>[A201/A301]</span> 4인 기준 30,000원 (1인 추가 5,000원)<br>
+                            <span>이용시간</span> : 제한없음<br>
+                            <span>이용구성</span> : 집게, 그릴, 가위<br>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>유의사항</dt>
+                        <dd>
+                            ※ 그릴, 숯, 전기/전열기구 등 개인 반입 금지<br>
+                            ※ 객실 내 생선이나 고기 등을 굽는 직화 방식 불가
+
+                        </dd>
+                    </dl>
+                </div>
+                <ul class="special_btm">
+                    <li style="background:url(<?= $special_4_2_jpg ?>) center; background-size:cover"></li>
+                    <li style="background:url(<?= $special_4_3_jpg ?>) center; background-size:cover"></li>
+                </ul>
+            </div>
+        </section>
+    </div> <!-- container -->
+    <?php include "common/inc/footer.html";?>
+</div>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,74 @@
+<?php include "common/inc/head.html";?>
+<div id="wrap">
+    <?php include "common/inc/header.html";?>
+    <div id="container">
+        <section id="content" class="sub3_1 sub_special">
+            <div class="main_visual visual">
+                <div class="visual_box">
+                    <div class="visual_control">
+                        <div class="swiper-arw swiper-button-prev"><img src="<?= $common_prev_png ?>" alt="prev"></div>
+                        <div class="swiper-arw swiper-button-next"><img src="<?= $common_next_png ?>" alt="next"></div>
+                    </div>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <?php if (count($trip_special_images_1) > 0) { foreach ($trip_special_images_1 as $special_image) { ?>
+                            <div class="swiper-slide" style="background:url(<?= $special_image->content_url ?>) center; background-size:cover;"></div>
+                            <?php }} ?>
+                        </div>					
+                    </div>						
+                </div>
+            </div>
+            <?php include "common/inc/special_lnb.html";?>
+            <div class="sub_cont inner">
+                <div class="title_box">
+                    <span>SPECIAL</span>
+                    <h3>오션뷰</h3>
+                    <p>Ocean View</p>
+                </div>
+                <div class="special_top">
+                    <div class="img" style="background:url(<?= $special_1_1_jpg ?>) center; background-size:cover"></div>
+                    <div class="txt">
+                        <div class="sp_detail">
+                            전 객실에서 오션뷰를 감상하실 수 있습니다.<br>
+                        </div>
+                    </div>
+                </div>
+                <div class="special_info">
+                    <!--dl>
+                        <dt>기본정보</dt>
+                        <dd>
+                            <span>이용요금</span> : 무료<br>
+                            <span>수심</span> : [유아풀] 0.9m<br>
+                            <span>이용시간</span> : 입실시 ~ 21시<br>
+                            <span>운영기간</span> : 사계절(탄력적 운영)<br>
+                            <span>이용복장</span> : 수영복, 래쉬가드, 기능성 티<br>
+                            <span>크기</span> : [대형 야외풀] 12m x 12m x 1.2m
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>유의사항</dt>
+                        <dd>
+                            ※ 12시 ~ 14시는 청소 및 점검으로 이용 불가<br>
+                            ※ 인피니티풀, 유아풀은 미온수 수영장입니다.<br>
+                            (11월 14일부터 미온수 가능)<br>
+                            ※ 야외수영장 이용 시 사전문의필수
+                        </dd>
+                    </dl-->
+                </div>
+                <ul class="special_btm">
+                    <li style="background:url(<?= $special_1_2_jpg ?>) center; background-size:cover"></li>
+                    <li style="background:url(<?= $special_1_3_jpg ?>) center; background-size:cover"></li>
+                </ul>
+            </div>
+        </section>
+    </div> <!-- container -->
+    <?php include "common/inc/footer.html";?>
+</div>
+
+
+
+
+
+
+
+

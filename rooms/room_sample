@@ -1,0 +1,167 @@
+<?php include "common/inc/head.html";?>
+<div id="wrap">
+	<?php include "common/inc/header.html";?>
+	<div id="container">
+        <section id="content" class="sub2_2 sub_room sub_room_detail">
+			<div class="main_visual visual">
+				<div class="visual_box">
+					<div class="visual_control">
+						<div class="swiper-arw swiper-button-prev"><img src="<?= $common_prev_png ?>" alt="prev"></div>
+						<div class="swiper-arw swiper-button-next"><img src="<?= $common_next_png ?>" alt="next"></div>
+					</div>
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide" style="background:url(<?= $room_1_1_jpg ?>) center; background-size:cover"></div>
+							<div class="swiper-slide" style="background:url(<?= $room_1_2_jpg ?>) center; background-size:cover"></div>
+							<div class="swiper-slide" style="background:url(<?= $room_1_3_jpg ?>) center; background-size:cover"></div>
+							<div class="swiper-slide" style="background:url(<?= $room_1_4_jpg ?>) center; background-size:cover"></div>
+							<div class="swiper-slide" style="background:url(<?= $room_1_5_jpg ?>) center; background-size:cover"></div>
+							<div class="swiper-slide" style="background:url(<?= $room_1_6_jpg ?>) center; background-size:cover"></div>
+							<div class="swiper-slide" style="background:url(<?= $room_1_7_jpg ?>) center; background-size:cover"></div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sub_cate_wrap">
+				<div class="inner">
+            <ul>
+                <li class="on"><a href="room.html">미리보기</a></li>
+                <?php if (count($trip_room_list) > 0) { foreach ($trip_room_list as $room) { ?>
+                <li class="<?= $room->id == $_GET['room_id'] ? 'on' : '' ?>"><a href="/room.html?room_id=<?= $room->id ?>"><?= $room->title ?></a></li>
+                <?php }} ?>>
+            </ul>	
+				</div>
+			</div>
+			<div class="sub_cont">
+				<div class="room_title">
+					<dl class="inner">
+						<div class="box">
+							<h4>101호(샹젤리제)</h4>
+							<p>복층형 / 침대룸 / 개별실내풀</p>
+						</div>
+						<ul class="notice_li">
+							<li>이 객실은 금연 객실입니다.</li>
+							<li>내,외부의 가구 및 소품은 펜션 사정에 의해 변경될 수 있습니다.</li>
+							<li>현장 상황에 따라 커피머신 종류가 달라질 수 있습니다.</li>
+						</ul>
+						<div class="btn_wrap"><a href="<?= $mh_reservation_url ?>" class="btn_reserve">실시간 예약</a></div>
+					</dl>
+				</div>
+				<div class="table_box inner">
+					<div class="price_table for_pc">
+						<table cellspacing="0" cellpadding="0" class="table_default">
+							<thead>
+								<tr>
+									<th scope="col" rowspan="2">객실명</th>
+									<th scope="col" rowspan="2" class="bg">평형</th>
+									<th scope="col" rowspan="2" class="bg">유형</th>
+									<th scope="col" colspan="2" class="bg">인원</th>
+									<th scope="col" colspan="3">비수기</th>
+									<th scope="col" colspan="3">준성수기</th>
+									<th scope="col" colspan="3">성수기</th>
+								</tr>
+								<tr>
+									<th scope="col" class="bg">기준</th>
+									<th scope="col" class="bg">최대</th>
+									<th scope="col">주중</th>
+									<th>금요</th>
+									<th scope="col">주말</th>
+									<th scope="col">주중</th>
+									<th>금요</th>
+									<th scope="col">주말</th>
+									<th scope="col">주중</th>
+									<th>금요</th>
+									<th scope="col">주말</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td scope="row">별빛(1층)</td>
+									<td>9.00평</td>
+									<td>원룸형/ 침대룸 주방 화장실</td>
+									<td>2</td>
+									<td>4</td>
+									<td>69,000</td>
+									<td>69,000</td>
+									<td>99,000</td>
+									<td>79,000</td>
+									<td>89,000</td>
+									<td>119,000</td>
+									<td>89,000</td>
+									<td>99,000</td>
+									<td>129,000</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="price_table for_m">
+						<table cellspacing="0" cellpadding="0" class="table_default">
+							<thead>
+								<tr>
+									<th colspan="2">객실명</th>
+									<th>기간</th>
+									<th>주중</th>
+									<th>금요일</th>
+									<th>주말</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td rowspan="3" colspan="2"><span>별빛(1층)</span></td>
+									<td>비수기</td>
+									<td>69,000</td>
+									<td>69,000</td>
+									<td>99,000</td>
+								</tr>
+								<tr>
+									<td>준성수기</td>
+									<td>79,000</td>
+									<td>89,000</td>
+									<td>119,000</td>
+								</tr>
+								<tr>
+									<td>성수기</td>
+									<td>89,000</td>
+									<td>99,000</td>
+									<td>129,000</td>
+								</tr>
+								<tr>
+									<td class="bg">기준인원</td>
+									<td class="bg">최대인원</td>
+									<td colspan="4" class="bg">유형</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>4</td>
+									<td colspan="4">원룸형/ 침대룸 주방 화장실</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="room_detail_img inner">
+					<ul>
+						<li style="background:url(<?= $room_1_1_jpg ?>) center; background-size:cover"></li>
+						<li style="background:url(<?= $room_1_2_jpg ?>) center; background-size:cover"></li>
+					</ul>
+					<div style="background:url(<?= $room_1_3_jpg ?>) center; background-size:cover"></div>
+					<ul>
+						<li style="background:url(<?= $room_1_4_jpg ?>) center; background-size:cover"></li>
+						<li style="background:url(<?= $room_1_5_jpg ?>) center; background-size:cover"></li>
+						<li style="background:url(<?= $room_1_6_jpg ?>) center; background-size:cover"></li>
+					</ul>
+				</div>
+				<?php include "common/inc/room_list.html";?>
+			</div>
+		</section>	
+	</div> <!-- container -->
+	<?php include "common/inc/footer.html";?>
+</div>
+
+
+
+
+
+
+

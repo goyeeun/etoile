@@ -1,0 +1,188 @@
+<?php include "common/inc/head.html";?>
+<?php include $_SERVER['DOCUMENT_ROOT'].'/common/inc/popup.html'; ?>
+<div id="wrap">
+    <?php include "common/inc/header.html";?>
+    <div id="container">
+        <section id="content" class="main">
+            <div class="main_visual visual">
+                <div class="visual_box">
+                    <div class="visual_txt">
+                        <strong><?= $mh_item_name ?></strong>
+                        <p>Welcome To <?= $pension_en2 ?></p>
+                    </div>
+                    <div class="visual_control">
+                        <div class="swiper-arw swiper-button-prev"><img src="<?= $common_prev_png ?>" alt="prev"></div>
+                        <div class="swiper-arw swiper-button-next"><img src="<?= $common_next_png ?>" alt="next"></div>
+                    </div>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <?php if (count($trip_item_images) > 0) { foreach ($trip_item_images as $item_image) { ?>
+                            <div class="swiper-slide" style="background:url(<?= $item_image->content_url ?>) center; background-size:cover;"></div>
+                            <?php }} ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <?php include "common/inc/room_list.html";?>
+            <div class="main_special inner">
+                <div class="title_box">
+                    <span>SPECIAL POINTS</span>
+                    <h3>스페셜 포인트</h3>
+                    <p><?= $mh_item_name ?>의 스페셜 포인트를 소개합니다.</p>
+                </div>
+                <div class="special_list">
+                    <div class="arw">
+                        <div class="swiper-button-prev"><img src="<?= $common_room_prev_png ?>" alt="prev"></div>
+                        <div class="swiper-button-next"><img src="<?= $common_room_next_png ?>" alt="next"></div>
+                    </div>
+                    <span class="ps_txt">Special Points</span>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="img" style="background:url(<?= $room_1_1_jpg ?>) center;background-size:cover"></div>
+                                <div class="txt_box">
+                                    <span>SPECIAL POINTS</span>
+                                    <strong>오션뷰</strong>
+                                    <p>Ocean View</p>
+                                    <a href="special1.html" class="btn_more">자세히보기</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img" style="background:url(<?= $special_2_1_jpg ?>) center;background-size:cover"></div>
+                                <div class="txt_box">
+                                    <span>SPECIAL POINTS</span>
+                                    <strong>반려견 동반</strong>
+                                    <p>With Pet</p>
+                                    <a href="special2.html" class="btn_more">자세히보기</a>
+                                </div>							
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img" style="background:url(<?= $special_3_1_jpg ?>) center;background-size:cover"></div>
+                                <div class="txt_box">
+                                    <span>SPECIAL POINTS</span>
+                                    <strong>야외 인피니티풀</strong>
+                                    <p>Infinity Pool</p>
+                                    <a href="special3.html" class="btn_more">자세히보기</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img" style="background:url(<?= $room_2_9_jpg ?>) center;background-size:cover"></div>
+                                <div class="txt_box">
+                                    <span>SPECIAL POINTS</span>
+                                    <strong>개별 수영장</strong>
+                                    <p>Private Pool</p>
+                                    <a href="special4.html" class="btn_more">자세히보기</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img" style="background:url(<?= $room_5_12_jpg ?>) center;background-size:cover"></div>
+                                <div class="txt_box">
+                                    <span>SPECIAL POINTS</span>
+                                    <strong>온수스파</strong>
+                                    <p>Spa</p>
+                                    <a href="special5.html" class="btn_more">자세히보기</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img" style="background:url(<?= $room_1_13_jpg ?>) center;background-size:cover"></div>
+                                <div class="txt_box">
+                                    <span>SPECIAL POINTS</span>
+                                    <strong>개별 바베큐</strong>
+                                    <p>Private BBQ</p>
+                                    <a href="special6.html" class="btn_more">자세히보기</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img" style="background:url(<?= $special_7_1_jpg ?>) center;background-size:cover"></div>
+                                <div class="txt_box">
+                                    <span>SPECIAL POINTS</span>
+                                    <strong>조식</strong>
+                                    <p>Breakfast</p>
+                                    <a href="special7.html" class="btn_more">자세히보기</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img" style="background:url(<?= $special_8_1_jpg ?>) center;background-size:cover"></div>
+                                <div class="txt_box">
+                                    <span>SPECIAL POINTS</span>
+                                    <strong>서비스</strong>
+                                    <p>Service</p>
+                                    <a href="special.html" class="btn_more">자세히보기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="main_wide_bg" style="background-image:url(<?= $view_6_jpg ?>);">
+                <div class="txt_box">
+                    <p>Welcome To <?= $pension_en2 ?></p>
+                    <strong>Make your Stay Even Better</strong>
+                    <a href="<?= $mh_reservation_url ?>" class="btn_reserve" target="_blank">실시간 예약</a>
+                </div>
+            </div>
+            <div class="main_look inner">
+                <div class="title_box">
+                    <span>LOOK AROUND</span>
+                    <h3>숙소 둘러보기</h3>
+                    <p><?= $mh_item_name ?> 내·외부 둘러보기</p>
+                </div>
+                <ul>
+                    <li>
+                        <div class="img" style="background:url(<?= $room_28446_2_jpg ?>) 50% 50%;background-size:cover;"></div>
+                        <div class="txt">
+                            <p>거실</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img" style="background:url(<?= $room_28446_3_jpg ?>) 50% 50%;background-size:cover;"></div>
+                        <div class="txt">
+                            <p>주방</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img" style="background:url(<?= $room_28446_7_jpg ?>) 50% 50%;background-size:cover;"></div>
+                        <div class="txt">
+                            <p>침실</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img" style="background:url(<?= $room_28446_13_jpg ?>) 50% 50%;background-size:cover;"></div>
+                        <div class="txt">
+                            <p>개별 바베큐장</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img" style="background:url(<?= $room_28446_9_jpg ?>) 50% 50%;background-size:cover;"></div>
+                        <div class="txt">
+                            <p>개별 수영장</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <?php if ($mh_instagram_calendar_use === true) { ?>
+            <?php include "common/inc/instagram.html"; ?>
+            <?php } ?>
+        </section>
+    </div><!--// container -->
+    <?php include "common/inc/footer.html";?>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

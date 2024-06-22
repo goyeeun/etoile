@@ -1,0 +1,68 @@
+<section id="content" class="sub2_2 sub_room sub_room_detail">
+    <div class="main_visual visual">
+        <div class="visual_box">
+            <div class="visual_control">
+                <div class="swiper-arw swiper-button-prev"><img src="<?= $common_prev_png ?>" alt="prev"></div>
+                <div class="swiper-arw swiper-button-next"><img src="<?= $common_next_png ?>" alt="next"></div>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <?php if (count($trip_room_images) > 0) { foreach ($trip_room_images as $room_image) { ?>
+                    <div class="swiper-slide" style="background:url(<?= $room_image->content_url ?>) center; background-size:cover;"></div>
+                    <?php }} ?>
+                </div>
+            </div>
+        </div>
+    </div>
+    <?php include "common/inc/room_list_lnb.html";?>
+    <div class="sub_cont">
+        <div class="room_title">
+            <dl class="inner">
+                <div class="box">
+                    <h4><?= $mh_room_names[$_GET['room_id']] ?></h4>
+                    <p><?= $mh_room_structure[$_GET['room_id']] ?></p>
+                </div>
+                <ul class="notice_li">
+                    <li>인원추가 불가 합니다. (기준/최대 2인)</li>
+                    <li>입/퇴실 시간을 반드시 지켜주세요.</li>
+                    <li>21시 이후 입실 시 펜션 연락 필수입니다.</li>
+                </ul>
+                <div class="btn_wrap"><a href="<?= $mh_reservation_url ?>" class="btn_reserve" target="_blank">실시간 예약</a></div>
+            </dl>
+        </div>
+        <div class="table_box inner">
+            <?php include "common/inc/price_table.html";?>	
+        </div>
+        <div class="room_detail_img inner">
+            <ul>
+                <li style="background:url(<?= ${'room_' . $_GET['room_id'] . '_4_jpg'} ?>) center; background-size:cover"></li>
+                <li style="background:url(<?= ${'room_' . $_GET['room_id'] . '_2_jpg'} ?>) center; background-size:cover"></li>
+            </ul>
+            <div style="background:url(<?= ${'room_' . $_GET['room_id'] . '_1_jpg'} ?>) center; background-size:cover"></div>
+            <ul>
+                <li style="background:url(<?= ${'room_' . $_GET['room_id'] . '_6_jpg'} ?>) center; background-size:cover"></li>
+                <li style="background:url(<?= ${'room_' . $_GET['room_id'] . '_5_jpg'} ?>) center; background-size:cover"></li>
+                <li style="background:url(<?= ${'room_' . $_GET['room_id'] . '_3_jpg'} ?>) center; background-size:cover"></li>
+            </ul>
+        </div>
+        <?php include "common/inc/room_list.html";?>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
